@@ -1,0 +1,43 @@
+.carousel-slider-container {
+    position: relative;
+    overflow: hidden;
+
+    .carousel-slider {
+        position: absolute;
+        width: 88%;
+        height: 100%;
+        margin-left: 6%;
+        padding: 0;
+        list-style: none;
+
+        li {
+            position: absolute;
+            top: 50%;
+            margin: auto;
+            overflow: hidden;
+            transform: translateY(-50%);
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        width: 6%;
+        height: 70px;
+        margin-top: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        &.prev {
+            left: 0;
+        }
+
+        &.next {
+            right: 0;
+        }
+    }
+}
